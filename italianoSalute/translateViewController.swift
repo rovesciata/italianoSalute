@@ -53,12 +53,12 @@ class translateViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
     @objc func onbackClick(_: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-        
+    
     
     //tapToRead(button)で読み上げ
     @IBAction func tspToRead(_ sender: UIButton) {
         
-        var talker = AVSpeechSynthesizer()
+        _ = AVSpeechSynthesizer()
         
         let utterance = AVSpeechUtterance(string:self.yakuSentence.text!)
         utterance.voice = AVSpeechSynthesisVoice(language: "it-IT") //イタリア語を読みます
@@ -77,19 +77,19 @@ class translateViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
     }
     
     //読み上げ開始
-    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!)
+    func speechTranslate(synthesizer: AVSpeechSynthesizer!, didStartSpeechUtterance utterance: AVSpeechUtterance!)
     {
         print("開始")
     }
     
     //終了
-    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!)
+    func speechTranslate(synthesizer: AVSpeechSynthesizer!, didFinishSpeechUtterance utterance: AVSpeechUtterance!)
     {
         print("終了")
     }
     
     //読み上げ中の言葉を取得
-    func speechSynthesizer(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!)
+    private func speechTranslate(synthesizer: AVSpeechSynthesizer!, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance!)
     {
         let word = (utterance.speechString as NSString).substring(with: characterRange)
         print("Speech: \(word)")

@@ -106,7 +106,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何かイタリア語で話してみて！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-0Y-v5S">
-                                <rect key="frame" x="35" y="399" width="228.5" height="35"/>
+                                <rect key="frame" x="35" y="399" width="270" height="35"/>
                                 <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="16S-2x-HKF"/>
@@ -142,6 +142,7 @@
                             <constraint firstItem="YmE-Z6-hsc" firstAttribute="top" secondItem="ioU-lh-vy9" secondAttribute="bottom" constant="5" id="Mf7-SH-Pgl"/>
                             <constraint firstItem="ioU-lh-vy9" firstAttribute="top" secondItem="t6h-rz-hK5" secondAttribute="top" constant="10" id="Rgm-fF-L7d"/>
                             <constraint firstItem="I3j-cb-fBZ" firstAttribute="leading" secondItem="t6h-rz-hK5" secondAttribute="leading" id="a70-M3-OCu"/>
+                            <constraint firstItem="t6h-rz-hK5" firstAttribute="trailing" secondItem="dcl-0Y-v5S" secondAttribute="trailing" constant="70" id="eOM-SP-uSE"/>
                             <constraint firstItem="ioU-lh-vy9" firstAttribute="leading" secondItem="t6h-rz-hK5" secondAttribute="leading" constant="16" id="wpW-XX-FBz"/>
                             <constraint firstItem="I3j-cb-fBZ" firstAttribute="bottom" secondItem="t6h-rz-hK5" secondAttribute="bottom" id="yW5-nB-Mgc"/>
                         </constraints>
