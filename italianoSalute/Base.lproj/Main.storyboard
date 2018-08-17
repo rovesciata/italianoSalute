@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="italianoSalute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shutterstock_409629832.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-Dz-Dho">
+                                <rect key="frame" x="0.0" y="137" width="375" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="393" id="qCo-bl-6Uk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm7-y5-zoz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20784313725490197" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="13Z-mJ-SeM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qch-FO-Cv2">
+                                <rect key="frame" x="0.0" y="530" width="375" height="137"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20784313730000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">先生をタップして
+イタリア語を覚えましょう。
+50回練習したらクラスメートと
+ランチタイム！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqC-eT-lfu">
+                                <rect key="frame" x="137" y="430" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Elc-A3-Zgg"/>
+                                    <constraint firstAttribute="height" constant="100" id="ffg-LU-I6d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
+                                <state key="normal" title="💁‍♀️">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NoR-vB-Wfl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hNq-Dz-Dho" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2wW-eC-ECZ"/>
+                            <constraint firstItem="Qch-FO-Cv2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8CL-h7-LFN"/>
+                            <constraint firstItem="hNq-Dz-Dho" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CxY-8H-Dj3"/>
+                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XgW-yo-WfA"/>
+                            <constraint firstItem="Qch-FO-Cv2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="buz-AR-qVY"/>
+                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gby-BQ-vws"/>
+                            <constraint firstItem="Qch-FO-Cv2" firstAttribute="top" secondItem="hNq-Dz-Dho" secondAttribute="bottom" id="nuy-Y4-ZFV"/>
+                            <constraint firstItem="KqC-eT-lfu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2t-Ra-niA"/>
+                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ope-jH-zhV"/>
+                            <constraint firstItem="hNq-Dz-Dho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pPf-qf-cKG"/>
+                            <constraint firstItem="Qch-FO-Cv2" firstAttribute="top" secondItem="KqC-eT-lfu" secondAttribute="bottom" id="u0G-45-IfK"/>
+                            <constraint firstItem="Qch-FO-Cv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vn5-C7-3wm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="KqC-eT-lfu" id="KAb-w2-GX4"/>
+                        <outlet property="italian" destination="Hm7-y5-zoz" id="0oG-7C-92a"/>
+                        <outlet property="japanese" destination="Qch-FO-Cv2" id="EXL-qT-0fN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+        <!--Translate View Controller-->
+        <scene sceneID="dOl-WI-CCD">
+            <objects>
+                <viewController storyboardIdentifier="Insert" id="qGF-y1-XWW" customClass="translateViewController" customModule="italianoSalute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAg-ll-ufA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shutterstock_319469732.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="I3j-cb-fBZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioU-lh-vy9">
+                                <rect key="frame" x="16" y="30" width="343" height="121"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="igC-8R-wlj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何かイタリア語で話してみて！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-0Y-v5S">
+                                <rect key="frame" x="35" y="399" width="228.5" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="16S-2x-HKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmE-Z6-hsc">
+                                <rect key="frame" x="16" y="156" width="343" height="43"/>
+                                <color key="backgroundColor" red="0.1939630826" green="0.66757217639999999" blue="0.42424463359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="W9n-zJ-mrU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <state key="normal" title="上にイタリア語を書いて、ここをタップすると話せます。">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tspToRead:" destination="qGF-y1-XWW" eventType="touchUpInside" id="BeM-he-6RC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dcl-0Y-v5S" firstAttribute="leading" secondItem="t6h-rz-hK5" secondAttribute="leading" constant="35" id="2Ns-YM-Cta"/>
+                            <constraint firstItem="I3j-cb-fBZ" firstAttribute="trailing" secondItem="t6h-rz-hK5" secondAttribute="trailing" id="3tI-dV-hbC"/>
+                            <constraint firstItem="t6h-rz-hK5" firstAttribute="bottom" secondItem="dcl-0Y-v5S" secondAttribute="bottom" constant="233" id="56P-LL-KRG"/>
+                            <constraint firstItem="t6h-rz-hK5" firstAttribute="trailing" secondItem="YmE-Z6-hsc" secondAttribute="trailing" constant="16" id="5g4-Ha-cZF"/>
+                            <constraint firstItem="I3j-cb-fBZ" firstAttribute="top" secondItem="SAg-ll-ufA" secondAttribute="top" id="GrD-7w-b1d"/>
+                            <constraint firstItem="t6h-rz-hK5" firstAttribute="trailing" secondItem="ioU-lh-vy9" secondAttribute="trailing" constant="16" id="JRi-HZ-2Lj"/>
+                            <constraint firstItem="YmE-Z6-hsc" firstAttribute="leading" secondItem="t6h-rz-hK5" secondAttribute="leading" constant="16" id="LuT-Kt-nwC"/>
+                            <constraint firstItem="YmE-Z6-hsc" firstAttribute="top" secondItem="ioU-lh-vy9" secondAttribute="bottom" constant="5" id="Mf7-SH-Pgl"/>
+                            <constraint firstItem="ioU-lh-vy9" firstAttribute="top" secondItem="t6h-rz-hK5" secondAttribute="top" constant="10" id="Rgm-fF-L7d"/>
+                            <constraint firstItem="I3j-cb-fBZ" firstAttribute="leading" secondItem="t6h-rz-hK5" secondAttribute="leading" id="a70-M3-OCu"/>
+                            <constraint firstItem="ioU-lh-vy9" firstAttribute="leading" secondItem="t6h-rz-hK5" secondAttribute="leading" constant="16" id="wpW-XX-FBz"/>
+                            <constraint firstItem="I3j-cb-fBZ" firstAttribute="bottom" secondItem="t6h-rz-hK5" secondAttribute="bottom" id="yW5-nB-Mgc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t6h-rz-hK5"/>
+                    </view>
+                    <connections>
+                        <outlet property="girlComment" destination="dcl-0Y-v5S" id="VZq-jG-s8j"/>
+                        <outlet property="yakuSentence" destination="ioU-lh-vy9" id="42o-nM-KvW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUj-OZ-2oF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552.79999999999995" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shutterstock_319469732.jpg" width="4992" height="3744"/>
+        <image name="shutterstock_409629832.jpg" width="500" height="333"/>
+    </resources>
+</document>
