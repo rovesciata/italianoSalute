@@ -38,7 +38,7 @@ class translateViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
         girlComment.layer.borderWidth = 1.0
         
         // キャンセルボタン
-        let backBtn = UIButton(frame: CGRect(x: 10, y: self.view.bounds.height - 50, width: 150, height: 40))
+        let backBtn = UIButton(frame: CGRect(x: 10, y: self.view.bounds.height - 70, width: 150, height: 40))
         backBtn.setTitle("教室へ戻る", for: UIControlState())
         backBtn.setTitleColor(.white, for: UIControlState())
         backBtn.backgroundColor = .orange

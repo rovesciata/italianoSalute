@@ -133,7 +133,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
         super.viewWillAppear(animated)
         
         // 画面遷移ボタン
-        addBtn.frame = CGRect(x: self.view.bounds.width - 70, y: self.view.bounds.height - 150, width: 55, height:55)
+        addBtn.frame = CGRect(x: self.view.bounds.width - 70, y: self.view.bounds.height - 120, width: 55, height:55)
         addBtn.isHidden = true
         addBtn.setTitle("🍕", for: UIControlState())
         addBtn.titleLabel!.font = UIFont(name: "Helvetica", size: 30)

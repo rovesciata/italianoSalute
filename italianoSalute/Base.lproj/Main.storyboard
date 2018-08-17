@@ -20,16 +20,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shutterstock_409629832.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hNq-Dz-Dho">
                                 <rect key="frame" x="0.0" y="137" width="375" height="393"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="393" id="qCo-bl-6Uk"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm7-y5-zoz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20784313725490197" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="13Z-mJ-SeM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -37,6 +31,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qch-FO-Cv2">
                                 <rect key="frame" x="0.0" y="530" width="375" height="137"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20784313730000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="yOQ-Dy-rox"/>
+                                </constraints>
                                 <string key="text">先生をタップして
 イタリア語を覚えましょう。
 50回練習したらクラスメートと
@@ -64,13 +61,14 @@
                         <constraints>
                             <constraint firstItem="hNq-Dz-Dho" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2wW-eC-ECZ"/>
                             <constraint firstItem="Qch-FO-Cv2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8CL-h7-LFN"/>
+                            <constraint firstItem="hNq-Dz-Dho" firstAttribute="top" secondItem="Hm7-y5-zoz" secondAttribute="bottom" id="9hQ-ah-dCf"/>
                             <constraint firstItem="hNq-Dz-Dho" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CxY-8H-Dj3"/>
-                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XgW-yo-WfA"/>
+                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SYm-rv-mGy"/>
+                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VSQ-Gs-dwd"/>
                             <constraint firstItem="Qch-FO-Cv2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="buz-AR-qVY"/>
-                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gby-BQ-vws"/>
+                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kzl-Jx-MWx"/>
                             <constraint firstItem="Qch-FO-Cv2" firstAttribute="top" secondItem="hNq-Dz-Dho" secondAttribute="bottom" id="nuy-Y4-ZFV"/>
                             <constraint firstItem="KqC-eT-lfu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2t-Ra-niA"/>
-                            <constraint firstItem="Hm7-y5-zoz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ope-jH-zhV"/>
                             <constraint firstItem="hNq-Dz-Dho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pPf-qf-cKG"/>
                             <constraint firstItem="Qch-FO-Cv2" firstAttribute="top" secondItem="KqC-eT-lfu" secondAttribute="bottom" id="u0G-45-IfK"/>
                             <constraint firstItem="Qch-FO-Cv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vn5-C7-3wm"/>
