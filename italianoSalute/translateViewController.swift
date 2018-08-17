@@ -57,9 +57,6 @@ class translateViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
     
     //tapToRead(button)で読み上げ
     @IBAction func tspToRead(_ sender: UIButton) {
-    
-    
-    
         
         var talker = AVSpeechSynthesizer()
         

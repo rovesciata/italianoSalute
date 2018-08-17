@@ -112,7 +112,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
             self.italian.transform = CGAffineTransform.identity
         }
         // 50回練習したらピザボタンが表示
-        if count >= 1 {
+        if count >= 50 {
             addBtn.isHidden = false
         }
     }
