@@ -34,23 +34,24 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="yOQ-Dy-rox"/>
                                 </constraints>
-                                <string key="text">先生をタップして
+                                <string key="text">上のボタンをタップして
 イタリア語を覚えましょう。
 50回練習したらクラスメートと
-ランチタイム！</string>
+ランチタイム♪</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqC-eT-lfu">
-                                <rect key="frame" x="137" y="430" width="100" height="100"/>
+                                <rect key="frame" x="147" y="450" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Elc-A3-Zgg"/>
-                                    <constraint firstAttribute="height" constant="100" id="ffg-LU-I6d"/>
+                                    <constraint firstAttribute="height" constant="80" id="0bg-vt-fh5"/>
+                                    <constraint firstAttribute="width" constant="80" id="ixH-mS-JiT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
-                                <state key="normal" title="💁‍♀️">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="23"/>
+                                <state key="normal" title="Tap!">
+                                    <color key="titleColor" red="1" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NoR-vB-Wfl"/>

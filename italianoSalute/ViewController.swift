@@ -11,7 +11,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
     @IBOutlet weak var japanese: UILabel!
     @IBOutlet weak var button: UIButton!
     
-    // 50回練習(先生タップ)したらピザボタン発生のカウント数
+    // 50回練習(タップ)したらピザボタン発生のカウント数
     var count = 0
     
     var addBtn = UIButton()
@@ -54,7 +54,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
             
         case 5:
             speakingText = "Piacere."
-            italian.text = "Piacere.\n\nピアチェーレ?"
+            italian.text = "Piacere.\n\nピアチェーレ"
             japanese.text = "はじめまして。"
             
         case 6:
@@ -126,6 +126,11 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        button.layer.cornerRadius = button.frame.height/2
+        button.layer.borderColor = UIColor(red: 0.3, green: 1, blue: 0.3, alpha: 1).cgColor
+        button.layer.borderWidth = 10
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowOffset = CGSize(width: 0, height: 5)
         
     }
     
@@ -133,17 +138,19 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
         super.viewWillAppear(animated)
         
         // 画面遷移ボタン
-        addBtn.frame = CGRect(x: self.view.bounds.width - 70, y: self.view.bounds.height - 120, width: 55, height:55)
+        addBtn.frame = CGRect(x: self.view.bounds.width - 90, y: self.view.bounds.height - 120, width: 80, height:40)
         addBtn.isHidden = true
-        addBtn.setTitle("🍕", for: UIControlState())
-        addBtn.titleLabel!.font = UIFont(name: "Helvetica", size: 30)
+        addBtn.setTitle("ランチ♪", for: UIControlState())
+        addBtn.titleLabel!.font = UIFont(name: "Helvetica", size: 15)
         addBtn.setTitleColor(.white, for: UIControlState())
-        addBtn.backgroundColor = .red
-        addBtn.layer.cornerRadius = addBtn.frame.height/2
+        addBtn.backgroundColor = .orange
+        addBtn.layer.cornerRadius = 5.0
         addBtn.addTarget(self, action: #selector(onClick(_:)), for: .touchUpInside)
         self.view.addSubview(addBtn)
-        addBtn.layer.shadowOpacity = 0.5
-        addBtn.layer.shadowOffset = CGSize(width: 0, height: 5)
+//        addBtn.layer.shadowOpacity = 0.5
+//        addBtn.layer.shadowOffset = CGSize(width: 0, height: 5)
+        addBtn.layer.borderWidth = 1
+        addBtn.layer.borderColor = UIColor.white.cgColor
     
         
     }
