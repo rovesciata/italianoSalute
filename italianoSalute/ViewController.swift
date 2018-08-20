@@ -5,8 +5,13 @@
 
 import UIKit
 import AVFoundation
+import GoogleMobileAds
 
-class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
+class ViewController: UIViewController, AVSpeechSynthesizerDelegate, GADBannerViewDelegate {
+    
+    
+    var bannerView: GADBannerView!
+    
     @IBOutlet weak var italian: UILabel!
     @IBOutlet weak var japanese: UILabel!
     @IBOutlet weak var button: UIButton!
@@ -42,9 +47,9 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
             japanese.text = "出身はどちらですか？"
             
         case 3:
-            speakingText = "Piacere. Mi chiamo Maria. Ho 20anni. Sono di Firenze."
-            italian.text = "Piacere. Mi chiamo Maria. Ho 20anni. Sono di Firenze."
-            japanese.text = "はじめまして。私の名前はマリアです。\n\n20歳で、フィレンツェ出身です。"
+            speakingText = "Si. No."
+            italian.text = "Sì. / No.\n\nスィ / ノ"
+            japanese.text = "はい。/ いいえ。"
             
         case 4:
             speakingText = "Come stai?"
@@ -126,6 +131,16 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // In this case, we instantiate the banner with desired ad size.
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
+        addBannerViewToView(bannerView)
+        
+
+        
         button.layer.cornerRadius = button.frame.height/2
         button.layer.borderColor = UIColor(red: 0.3, green: 1, blue: 0.3, alpha: 1).cgColor
         button.layer.borderWidth = 10
@@ -133,6 +148,63 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
         
     }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    
+    // 4
+    /// Tells the delegate an ad request loaded an ad.
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("adViewDidReceiveAd")
+    }
+    
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+                didFailToReceiveAdWithError error: GADRequestError) {
+        print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+    
+    /// Tells the delegate that a full-screen view will be presented in response
+    /// to the user clicking on an ad.
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+        print("adViewWillPresentScreen")
+    }
+    
+    /// Tells the delegate that the full-screen view will be dismissed.
+    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+        print("adViewWillDismissScreen")
+    }
+    
+    /// Tells the delegate that the full-screen view has been dismissed.
+    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+        print("adViewDidDismissScreen")
+    }
+    
+    /// Tells the delegate that a user click will open another app (such as
+    /// the App Store), backgrounding the current app.
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+        print("adViewWillLeaveApplication")
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -155,7 +227,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
     }
     
-    // ピザボタンの処理
+    // ランチボタンの処理
     @objc func onClick(_: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let SecondController = storyboard.instantiateViewController(withIdentifier: "Insert")

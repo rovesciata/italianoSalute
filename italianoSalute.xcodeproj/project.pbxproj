@@ -20,6 +20,7 @@
 		8C7D326721269BF200BA9276 /* translateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D326621269BF200BA9276 /* translateViewController.swift */; };
 		8C7D32692126A4B100BA9276 /* shutterstock_319469732.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D32682126A4B000BA9276 /* shutterstock_319469732.jpg */; };
 		8C7D326B2126A74200BA9276 /* shutterstock_409629832.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D326A2126A73D00BA9276 /* shutterstock_409629832.jpg */; };
+		8CDD4899212AB9B300E0F830 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD4898212AB9B200E0F830 /* GoogleService-Info.plist */; };
 		934691DE451E2811BBDCCB7C /* Pods_italianoSaluteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CC73DD9F7348C8572C0CB8 /* Pods_italianoSaluteUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		8C7D326621269BF200BA9276 /* translateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translateViewController.swift; sourceTree = "<group>"; };
 		8C7D32682126A4B000BA9276 /* shutterstock_319469732.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_319469732.jpg; sourceTree = "<group>"; };
 		8C7D326A2126A73D00BA9276 /* shutterstock_409629832.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shutterstock_409629832.jpg; sourceTree = "<group>"; };
+		8CDD4898212AB9B200E0F830 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1EDA7DD733502D441476EC6 /* Pods-italianoSaluteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-italianoSaluteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-italianoSaluteUITests/Pods-italianoSaluteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4272F20491CF5DAA7F16CBA /* Pods-italianoSaluteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-italianoSaluteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-italianoSaluteTests/Pods-italianoSaluteTests.release.xcconfig"; sourceTree = "<group>"; };
 		F701455178DD1FC73574118A /* Pods-italianoSaluteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-italianoSaluteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-italianoSaluteTests/Pods-italianoSaluteTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				8C3449F3211536BF004FB58C /* Assets.xcassets */,
 				8C3449F5211536BF004FB58C /* LaunchScreen.storyboard */,
 				8C3449F8211536BF004FB58C /* Info.plist */,
+				8CDD4898212AB9B200E0F830 /* GoogleService-Info.plist */,
 			);
 			path = italianoSalute;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				8C3449F2211536BC004FB58C /* Main.storyboard in Resources */,
 				8C7D326B2126A74200BA9276 /* shutterstock_409629832.jpg in Resources */,
 				8C7D32692126A4B100BA9276 /* shutterstock_319469732.jpg in Resources */,
+				8CDD4899212AB9B300E0F830 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

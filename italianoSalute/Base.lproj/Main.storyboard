@@ -34,10 +34,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="137" id="yOQ-Dy-rox"/>
                                 </constraints>
-                                <string key="text">上のボタンをタップして
-イタリア語を覚えましょう。
-50回練習したらクラスメートと
-ランチタイム♪</string>
+                                <string key="text">タップしてイタリア語を覚えましょう。
+50回練習したらランチタイム♪</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
