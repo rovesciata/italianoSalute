@@ -133,7 +133,7 @@ class ViewController: UIViewController, AVSpeechSynthesizerDelegate, GADBannerVi
         
         // In this case, we instantiate the banner with desired ad size.
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-7282907738662618~1038970261"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         bannerView.delegate = self
